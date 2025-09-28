@@ -1,0 +1,15 @@
+# Docker-specific configuration
+eureka:
+  instance:
+    hostname: eureka-server
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+
+server:
+  port: 8761
+
+logging:
+  level:
+    root: INFO
